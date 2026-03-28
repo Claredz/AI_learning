@@ -2,7 +2,7 @@
 
 这是一个用来记录我学习 AI 基础过程的仓库。
 
-这里不是成熟框架，也不是“做完就结束”的项目。它更像一份持续更新的学习记录：我会在这里保存实验代码、学习笔记、实验观察和接下来的尝试方向。
+我会在这里保存实验代码、学习笔记、实验观察和接下来的尝试方向。
 
 我当前正在做的主线是：
 - 用 `NumPy` 手写最小 MLP
@@ -26,43 +26,9 @@
 - 用 sigmoid 做激活
 - 跑训练循环并观察 loss 和 accuracy
 
-这部分的重点不是“做一个很完整的模型”，而是先把最基础的训练流程真正看懂。
 
-## 目前可以从哪里开始看
 
-如果想直接看当前主线，可以先从这些位置开始：
 
-- `experiments/mlp/ann_binary_classifier.py`
-- `experiments/mlp/generate_sample_data.py`
-- `notes/learning_log.md`
-- `reports/experiment_template.md`
-
-## 如何运行当前实验
-
-1. 安装依赖
-
-```bash
-pip install -r requirements.txt
-```
-
-2. 需要时重新生成示例数据
-
-```bash
-python experiments/mlp/generate_sample_data.py
-```
-
-3. 运行当前的 MLP 二分类实验
-
-```bash
-python experiments/mlp/ann_binary_classifier.py
-```
-
-当前示例数据位于 `data/raw/gender_height_weight_100.csv`，主要字段为：
-- `height_cm`
-- `weight_kg`
-- `label_num`
-
-其中 `label_text` 只是为了阅读更方便，训练脚本只使用数值标签。
 
 ## 接下来准备继续探索什么
 
@@ -70,9 +36,4 @@ python experiments/mlp/ann_binary_classifier.py
 - 比较不同损失函数的表现
 - 把训练过程画成简单图像保存到 `figures/`
 
-## 这个仓库的使用原则
 
-- 先理解，再扩展
-- 先记录过程，再追求整齐
-- 保持轻量，不做过度工程化
-- 让未来的自己还能看懂现在写下的东西
