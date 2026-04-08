@@ -6,7 +6,7 @@
 
 当前已有主题：
 - `mlp/`：手写最小多层感知机
-
+- `micrograd`:学习karpathy的micrograd
 后续如果继续学习，可以自然增加：
 - `optimization/`
 - `visualization/`
